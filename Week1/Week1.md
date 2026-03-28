@@ -20,7 +20,7 @@
 
 ### Chapter 2 阅读笔记
 
-1. ![img](file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774703879108.png)
+1. <img src="file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774703879108.png" alt="img" style="zoom:50%;" />
 
 这张图片对比了 **Perspective Projection(透视投影法)**和**Parallel Projection(平行投影法)**的区别，透视投影法近大远小，平行关系改变。平行投影法不改变平行关系。我们常见的相机都是采用了**Perspective Projection**。
 
@@ -28,11 +28,11 @@
 
 
 
-2. ![img](file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774704229601.png)
+2. <img src="file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774704229601.png" alt="img" style="zoom:50%;" />
 
    关于实际中的一个点(X,Y,Z)如何投影到照片里面。解决的是三维如何向照片里面的二维投影的问题。
 
-   ![image-20260328213116571](C:\Users\MirrorMoon\AppData\Roaming\Typora\typora-user-images\image-20260328213116571.png)
+   <img src="C:\Users\MirrorMoon\AppData\Roaming\Typora\typora-user-images\image-20260328213116571.png" alt="image-20260328213116571" style="zoom:50%;" />
 
    转换关系可以由（2.1）的公式得到。
 
@@ -40,7 +40,7 @@
 
    
 
-3. 可以把观测到的照片看成是一个函数l(x,y)，输入是坐标(x,y)，输出是亮度![image-20260328213945524](C:\Users\MirrorMoon\AppData\Roaming\Typora\typora-user-images\image-20260328213945524.png)
+3. 可以把观测到的照片看成是一个函数l(x,y)，输入是坐标(x,y)，输出是亮度<img src="C:\Users\MirrorMoon\AppData\Roaming\Typora\typora-user-images\image-20260328213945524.png" alt="image-20260328213945524" style="zoom:50%;" />
 
    因此，一张照片就可以由上面形式的二元函数表示。
 
@@ -56,13 +56,13 @@
 
 5. 提取物体的边界：我们把图像看成一个在x,y平面上连续的函数，那么我们可以用**梯度Gradient**来刻画图像颜色的变化。
 
-   $$ \grad l = (\frac{\part{l}}{\part{x}},\frac{\part{l}}{\part{y}}) $$。梯度的方向是变化最大的方向。这里和微积分的定义是一样子的。![img](file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774707048308.png)
+   $$ \grad l = (\frac{\part{l}}{\part{x}},\frac{\part{l}}{\part{y}}) $$。梯度的方向是变化最大的方向。这里和微积分的定义是一样子的。<img src="file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774707048308.png" alt="img" style="zoom:50%;" />
 
 
 
 6. 近似计算图像上的偏导数的值：
 
-   ![img](file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774707131512.png)
+   <img src="file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774707131512.png" alt="img" style="zoom:50%;" />
 
 然而还有加权的事情，将在后续的学习中学到。
 
@@ -72,7 +72,7 @@
 
 7. 然后我们就可以通过简单的给边缘设置个阈值，然后找到梯度突变的地方，作为物体的边界，就像下面，我们找到了物体的边界。
 
-![img](file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774707440882.png)
+<img src="file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774707440882.png" alt="img" style="zoom:50%;" />
 
 
 
@@ -84,7 +84,7 @@
 
 
 
-10. 从真实世界转换到图像世界会损失很多东西，下面是一些保留的性质（2.6.4）![img](file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774708771559.png)
+10. 从真实世界转换到图像世界会损失很多东西，下面是一些保留的性质（2.6.4）<img src="file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774708771559.png" alt="img" style="zoom:50%;" />
 
 这些性质只能在三维->二维成立，但是在逆过程中未必成立
 
@@ -92,7 +92,7 @@
 
 11. 非偶然特性：非偶然特性只有在特定角度照相才能实现，我们可以初步认为照片里面的性质与三维里面的性质相对应。就是尽管逆过程不总成立，但是失效条件比较苛刻，我们可以初步认为成立。
 
-12. ![img](file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774709297302.png)
+12. <img src="file:///C:\Users\MIRROR~1\AppData\Local\Temp\QQ_1774709297302.png" alt="img" style="zoom:50%;" />
 
     这里还是有一些很特殊的情况的，但是在Chapter2我们只先考虑一般情况。
 
@@ -100,7 +100,7 @@
 
     平坦表面需要满足一下约束条件：
 
-    ![img](C:\Users\MirrorMoon\Desktop\QQ_1774709922584.png)
+    <img src="C:\Users\MirrorMoon\Desktop\QQ_1774709922584.png" alt="img" style="zoom:50%;" />
 
     二阶导数的近似可以用类似于一阶导数的方法。
 
